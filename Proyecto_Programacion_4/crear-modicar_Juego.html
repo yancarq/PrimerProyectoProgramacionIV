@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Crear/Modificar Juego</title>
+
+    <script>
+        function guardar(){
+            var confirmar = confirm("¿Seguro que los datos ingresados estan corrector?");
+            if(confirmar === true)
+                alert("Los datos se guardaron satisfactoriamente");
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" >
+    
+    <div class="container-fluid" >
+      <div class="navbar-header" >
+        <button type="button" class="navbar-toggle" data-target="#menuOpciones" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      </div>
+     
+      <a class="navbar-brand" href="index.html">Proyecto_1</a>
+      
+      <div class="collapse navbar-collapse " id="menuOpciones">
+        
+        <ul class="nav navbar-nav">
+          <li><a href="admin_usuarios.html">Lista Usuarios</a></li>
+          <li><a href="admin_juegos.html">Lista Juegos</a></li>
+        </ul>
+
+        <form class="navbar-form navbar-right" id="barraBusqueda">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="">Señor Administrador</a></li>
+            <li><a href="">|</a></li>
+            <li><a href="index.html">Salir</a></li>
+        </ul>
+        
+      </div>      
+    </div>
+  </nav>
+  
+  <div class="container" id="main_biblioteca">
+    <div>
+        <form action="" >
+            <font face="Comic Sans MS,arial,verdana" color="black" size="2">
+                <h3>Modificar/Crear Juego</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            Nombre del Juego: <br>
+                            <input type="text" class="form-control" size="80" value=""> 
+                        </div>
+                        <div class="col-md-2">
+                            Precio: <br>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-2">
+                            Rebaja: <br>
+                            <input type="text" class="form-control">
+                        </div>
+                       
+                    </div>
+                    Argumento: <br>
+                    <textarea class="form-control" name="argumentoJuego" rows="10" cols="40">
+                    </textarea>
+                    Etiquetas: <br>
+                    <input type="text" class="form-control" size="80" value="">
+                    <div class="row">
+                        <div class="col-md-6">
+                            Requerimiento Minimo: <br>
+                            <textarea class="form-control" name="argumentoJuego" rows="10" cols="40">
+                            </textarea>
+                        </div>
+                        <div class="col-md-6">
+                            Requerimiento Recomendable: <br>
+                            <textarea class="form-control" name="argumentoJuego" rows="10" cols="40">
+                            </textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-success btn-default pull-left" onclick="guardar()" data-dismiss="modal"><span class="glyphicon glyphicon-remove"> Guardar Cambios</span></button>
+                    <br>
+                    <br>
+            </font>
+        </form>
+    </div>
+  </div>
+
+  
+  <footer>
+    <HR align="left" size="2" width="1310" color="Green" noshade>
+     <p align="center"> <font face="arial" color="white">
+        Esto fue realizado por:<br>
+        Jason F. González García<br>
+        Yancarlos Retana Quesada<br>
+      </font>
+      </p>
+  </footer>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
